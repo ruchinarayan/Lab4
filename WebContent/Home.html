@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TODO Operations</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	
+  </head>
+  <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+		<button type="button" class="navbar-toggle"
+			data-toggle="collapse"
+			data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand">TODO Message Operations</a>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-center">
+				<li class="active"><a href="ToDoMessageSave.html">Create</a></li>
+				<li class="active"><a href="ToDoMessageDisplay.html">Display</a></li>
+				<li class="active"><a href="ListToDoMessages.html">List All</a></li>
+				<li class="active"><a href="ToDoMessageDelete.html">Delete</a></li>
+			</ul>
+		<div>
+   </div>
+ </nav>
+<div class="jumbotron text-left">
+<div class="container">
+	<div class="page-header">
+		<h2>TODO Message Save</h2>
+	<div>
+	<p>
+	<form class="form-inline" role="form" name="TodoMessage" method="post" action="TodoExeServlet">
+		<div class="form-group">
+			<label>ToDO Id: </label>
+			<input type="text" class="form-control" name = "id" />
+		</div>
+		<br>
+		<div class="form-group">
+			<label>ToDO Message: </label>
+			<input type="text" class="form-control" name = "message" />
+		</div>
+		<br>
+		<button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</p>
+</div>	
+</div>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/Lab3/js/app.js"></script>
+	
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+</div>
+  </body>
+</html>
